@@ -9,10 +9,10 @@ En esta clase hicimos ejemplos prácticos y encontraremos algunas formas de pasa
 6. Cache (Con y sin expiración)
 7. Cookies. Luego mejorado utilizando una clase propia CookiesHelper
 
-/Home/Index.cshtml
+### /Home/Index.cshtml
 ![](/imagenes/pag-alta.png?raw=true)
 
-/Home/ResumenPasajeDeDatos.cshtml
+### /Home/ResumenPasajeDeDatos.cshtml
 ![](/imagenes/pag-resultados.png?raw=true)
 
 # Como Ejecutar
