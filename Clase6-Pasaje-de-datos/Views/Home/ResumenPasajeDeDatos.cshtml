@@ -1,0 +1,79 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Tabla con valores</title>
+</head>
+<body>
+    <div>
+        <a href="/Home/Index">Index</a> |
+        <a href="/Home/ResumenPasajeDeDatos">Tabla con valores</a>
+        <h2>Tabla con valores</h2>
+        <h3>
+            Visualizando el valor de Mensaje luego de ser guardado en cada una de las siguientes formas:
+        </h3>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Variable</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>ViewBag</td>
+                <td>@ViewBag.Mensaje</td>
+            </tr>
+            <tr>
+                <td>ViewData</td>
+                <td>@ViewData["Mensaje"]</td>
+            </tr>
+            <tr>
+                <td>TempData</td>
+                <td>@TempData["Mensaje"]</td>
+            </tr>
+            <tr>
+                <td>Session Mensaje3</td>
+                <td>@Session["Mensaje3"]</td>
+            </tr>
+            <tr>
+                <td>Session usando SessionHelper</td>
+                <td>@Clase6_Pasaje_de_datos.Helpers.SessionHelper.Mensaje4</td>
+            </tr>
+            <tr>
+                <td>Session usando SessionHelper FechaCreacionSession (valor inicializado en Global.asax.cs)</td>
+                <td>@Clase6_Pasaje_de_datos.Helpers.SessionHelper.FechaCreacionSession</td>
+            </tr>
+            <tr>
+                <td>Application Mensaje</td>
+                <td>@HttpContext.Current.Application["Mensaje"]</td>
+            </tr>
+            <tr>
+                <td>Cant. de Posts, guardado en Application["count"]</td>
+                <td>@HttpContext.Current.Application["count"]</td>
+            </tr>
+            <tr>
+                <td>Cache Mensaje</td>
+                <td>@HttpContext.Current.Cache["Mensaje"]</td>
+            </tr>
+            <tr>
+                <td>Cache Mensaje 20 seg</td>
+                <td>@HttpContext.Current.Cache["MensajeDura20seg"]</td>
+            </tr>
+            @*<tr>
+                <td>Cookies Mensaje expira 1 min</td>
+                <td>@HttpContext.Current.Request.Cookies["Mensaje"].Value</td>
+            </tr>*@
+            <tr>
+                <td>Cookies Mensaje expira 1 min</td>
+                <td>@Clase6_Pasaje_de_datos.Helpers.CookiesHelper.Mensaje </td>
+            </tr>
+
+
+        </table>
+    </div>
+</body>
+</html>
