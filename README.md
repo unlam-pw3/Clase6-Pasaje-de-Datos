@@ -16,6 +16,6 @@ En esta clase hicimos ejemplos prácticos y encontraremos algunas formas de pasa
 ![](/imagenes/pag-resultados.png?raw=true)
 
 # Como Ejecutar
-1. Abrir el archivo **Clase5LayoutsValidaciones.sln** con el Visual Studio
+1. Abrir el archivo **Clase6-Pasaje-de-datos.sln** con el Visual Studio
 2. Click derecho en la solución, Restaurar paquetes de Nuget
 3. F5
